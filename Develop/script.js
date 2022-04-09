@@ -7,18 +7,33 @@ function generatePassword() {
 
   IncLowercase = confirm("Include lowercase letters? Select OK or Cancel");
   if (IncLowercase) {
-    alert ("Your password will include lowercase letters");
+    alert("Your password will include lowercase letters");
   } else {
-    alert ("Your password will NOT include lowercase letters");
+    alert("Your password will NOT include lowercase letters");
   }
 
   IncUppercase = confirm("Include uppercase letters? Select OK or Cancel");
   if (IncUppercase) {
-    alert ("Your password will include uppercase letters");
+    alert("Your password will include uppercase letters");
   } else {
-    alert ("Your password will NOT include uppercase letters");
+    alert("Your password will NOT include uppercase letters");
   }
 
+  IncNumbers = confirm("Include Numbers? Select OK or Cancel");
+  if (IncNumbers) {
+    alert("Your password will include numbers");
+  } else {
+    alert("Your password will NOT include numbers");
+  }
+
+  IncSpecial = confirm("Include Special Characters? Select OK or Cancel");
+  if (IncSpecial) {
+    alert("Your password will include Special Characters");
+  } else {
+    alert("Your password will NOT include Special Characters");
+  }
+
+  
 
 }
 
