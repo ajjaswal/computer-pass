@@ -56,6 +56,13 @@ function generatePassword() {
     newpassword = newpassword.concat(uppercase);
   }
   
+  if (IncNumbers) {
+    newpassword = newpassword.concat(numbers);
+  }
+  if (IncSpecial) {
+    newpassword = newpassword.concat(special);
+  }
+
   
 
 }
