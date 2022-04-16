@@ -49,6 +49,12 @@ function generatePassword() {
     alert("Choose a character type");
   };
 
+  if (IncLowercase) {
+    newpassword = newpassword.concat(lowercase);
+  }
+  if (IncUppercase) {
+    newpassword = newpassword.concat(uppercase);
+  }
   
   
 
