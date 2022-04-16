@@ -45,7 +45,14 @@ function generatePassword() {
     alert("Your password will NOT include Special Characters");
   }
 
+  if (IncLowercase === false && IncUppercase === false && IncNumbers === false && IncSpecial === false) {
+    alert("Choose a character type");
+  };
 
+  
+  
+
+}
   
 
 // Get references to the #generate element
