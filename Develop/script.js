@@ -64,8 +64,11 @@ function generatePassword() {
   }
 
   let finalPassword = ""
-  for (let i = 0; i < numberOfCharacters; i++) 
-
+  for (let i = 0; i < numberOfCharacters; i++) {
+    let rng =[Math.floor(Math.random() * newpassword.length)];
+    finalPassword = finalPassword + newpassword[rng];
+  }
+  return finalPassword;
 }
   
 
