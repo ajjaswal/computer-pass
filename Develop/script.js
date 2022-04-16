@@ -63,7 +63,8 @@ function generatePassword() {
     newpassword = newpassword.concat(special);
   }
 
-  
+  let finalPassword = ""
+  for (let i = 0; i < numberOfCharacters; i++) 
 
 }
   
