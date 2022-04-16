@@ -13,7 +13,7 @@
 
 # Screenshot
 
-![portfolioSS](https://user-images.githubusercontent.com/102101481/162533607-d3d078ec-55a9-4500-9829-7a280483dae5.png)
+![passwordgenscreenshot](https://user-images.githubusercontent.com/102101481/163693903-41e303b4-015a-4d38-a302-e18d2b54a0c2.png)
 
 
 
