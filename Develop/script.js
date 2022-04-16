@@ -4,10 +4,22 @@ function generatePassword() {
   var uppercase = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M'];
   var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   var special = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'];
+  var newpassword = [];
+
+  numberOfCharacters = prompt("How many characters do you want in your password? Choose between 8-128 characters.");
+  if (numberOfCharacters < 8 || numberOfCharacters > 128) {
+    return "Invalid. Choose between 8 and 138 characters";
+  } else if (isNaN(numberOfCharacters)) {
+    numberOfCharacters = prompt("Please enter a valid number.");
+  }
+  else {
+    alert("Your password will be " + numberOfCharacters + " characters long.");
+    
+  }
 
   IncLowercase = confirm("Include lowercase letters? Select OK or Cancel");
   if (IncLowercase) {
-    alert("Your password will include lowercase letters");
+    var turnToLowercase = alert("Your password will include lowercase letters");
   } else {
     alert("Your password will NOT include lowercase letters");
   }
@@ -33,9 +45,8 @@ function generatePassword() {
     alert("Your password will NOT include Special Characters");
   }
 
-  
 
-}
+  
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -50,4 +61,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);``
