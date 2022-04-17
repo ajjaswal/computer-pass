@@ -9,7 +9,7 @@ function generatePassword() {
   // Confirm number of characters in password
   numberOfCharacters = prompt("How many characters do you want in your password? Choose between 8-128 characters.");
   if (numberOfCharacters < 8 || numberOfCharacters > 128) {
-    return "Invalid. Choose between 8 and 138 characters";
+    return "Invalid. Choose between 8 and 128 characters";
   } else if (isNaN(numberOfCharacters)) {
     numberOfCharacters = prompt("Please enter a valid number.");
   }
